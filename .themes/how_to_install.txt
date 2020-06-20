@@ -1,0 +1,1 @@
+Copy the tar to ~/.themes/ and extract using tar --extract -f YOURTAR.tar.gz

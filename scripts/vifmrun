@@ -1,0 +1,29 @@
+#   __                _     _                      
+#  / _|_   _____ __ _| | __| | ___ _ __ __ _ _ __  
+# | |_\ \ / / __/ _` | |/ _` |/ _ \ '__/ _` | '_ \ 
+# |  _|\ V / (_| (_| | | (_| |  __/ | | (_| | | | |
+# |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
+#
+# My github: https://github.com/fvcalderan/
+# BSD 3-Clause License
+# Copyright (c) 2020, Felipe V. Calderan
+# All rights reserved.
+# See the full license inside LICENSE.txt file
+
+# This script was taken from a reddit post of the creator of UEBERZUG himself.
+
+#!/usr/bin/env bash
+export FIFO_UEBERZUG="/tmp/vifm-ueberzug-${PPID}"
+
+function cleanup {
+    rm "$FIFO_UEBERZUG" 2>/dev/null
+    pkill -P $$ 2>/dev/null
+}
+
+rm "$FIFO_UEBERZUG" 2>/dev/null
+mkfifo "$FIFO_UEBERZUG"
+trap cleanup EXIT
+tail --follow "$FIFO_UEBERZUG" | ueberzug layer --silent --parser bash &
+
+vifm
+cleanup

@@ -1,0 +1,79 @@
+#   __                _     _                      
+#  / _|_   _____ __ _| | __| | ___ _ __ __ _ _ __  
+# | |_\ \ / / __/ _` | |/ _` |/ _ \ '__/ _` | '_ \ 
+# |  _|\ V / (_| (_| | | (_| |  __/ | | (_| | | | |
+# |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
+#
+# My github: https://github.com/fvcalderan/
+# BSD 3-Clause License
+# Copyright (c) 2020, Felipe V. Calderan
+# All rights reserved.
+# See the full license inside LICENSE.txt file
+
+[options]
+allow_bold = true
+clickable_url = true
+font = Inconsolata 14
+scrollback_lines = 10000
+hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+# cursor_shape = ibeam
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+[colors]
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+[colors]
+background = #1c1c1c
+cursor = #fc971f
+foreground = #e5e5e5
+color0 = #212121
+color1 = #b7141f
+color2 = #457b24
+color3 = #f6981e
+color4 = #134eb2
+color5 = #560088
+color6 = #0e717c
+color7 = #efefef
+color8 = #424242
+color9 = #e83b3f
+color10 = #7aba3a
+color11 = #ffea2e
+color12 = #54a4f3
+color13 = #aa4dbc
+color14 = #26bbd1
+color15 = #d9d9d9
+colorBD = #b7141f
+colorIT =
+colorUL =
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+# vim: ft=dosini cms=#%s
