@@ -23,6 +23,7 @@ Does not include nvim configurations, since it has its own repository.
 
 ```
 Audio manager:      alsa, alsa-utils, pulseaudio
+Clipboard manager:  xclip
 Compositor:         picom
 Dual monitors:      mons
 File Manager GUI:   pcmanfm
