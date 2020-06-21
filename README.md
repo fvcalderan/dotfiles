@@ -7,7 +7,6 @@
 |  _|\ V / (_| (_| | | (_| |  __/ | | (_| | | | |
 |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
 
-My github: https://github.com/fvcalderan/
 BSD 3-Clause License
 Copyright (c) 2020, Felipe V. Calderan
 All rights reserved.
