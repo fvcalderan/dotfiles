@@ -5,10 +5,6 @@
 # |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
 #
 # My github: https://github.com/fvcalderan/
-# BSD 3-Clause License
-# Copyright (c) 2020, Felipe V. Calderan
-# All rights reserved.
-# See the full license inside LICENSE.txt file
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -25,6 +21,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias grep='grep --color=auto'
 alias vifm='vifmrun'
+alias cl='clear'
 
 # bash prompt. Default: PS1='[\u@\h \W]\$ '
 PS1="\[\e[1;36m\]\u\[\e[m\]:\[\e[33m\]\W\[\e[m\]\$ "

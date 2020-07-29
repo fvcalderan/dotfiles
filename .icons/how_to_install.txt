@@ -1,0 +1,1 @@
+Copy the tar to ~/.icons/ and extract using tar --extract -f YOURTAR.tar.gz

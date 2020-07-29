@@ -1,14 +1,10 @@
-#   __                _     _                      
-#  / _|_   _____ __ _| | __| | ___ _ __ __ _ _ __  
-# | |_\ \ / / __/ _` | |/ _` |/ _ \ '__/ _` | '_ \ 
+#   __                _     _
+#  / _|_   _____ __ _| | __| | ___ _ __ __ _ _ __
+# | |_\ \ / / __/ _` | |/ _` |/ _ \ '__/ _` | '_ \
 # |  _|\ V / (_| (_| | | (_| |  __/ | | (_| | | | |
 # |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
 #
 # My github: https://github.com/fvcalderan/
-# BSD 3-Clause License
-# Copyright (c) 2020, Felipe V. Calderan
-# All rights reserved.
-# See the full license inside LICENSE.txt file
 
 # Original license text:
 # Copyright (c) 2010 Aldo Cortesi
@@ -56,7 +52,9 @@ file_browser_term = term_emu + " -e vifmrun"
 text_editor = term_emu + " -e nvim"
 screenshot = "scrot_select"
 python_shell = term_emu + " -e 'python3 -q'"
-reload_screen_kbd = term_emu + " -e reload_screen_kbd" # used when connecting extra monitor or keyboard.
+# used when connecting extra monitor or keyboard.
+reload_screen_kbd = term_emu + " -e reload_screen_kbd"
+
 
 def spawn_python():
     return lazy.spawn(term_emu + " -e python3")
@@ -122,44 +120,44 @@ widget_defaults = dict(
 extension_defaults = widget_defaults.copy()
 
 screen1_config = Screen(
-        top=bar.Bar(
-            [
-                widget.GroupBox(active=bar_fg, inactive=bar_fg, hide_unused=True, this_screen_border=bar_fg,
-                                this_current_screen_border=bar_fg, borderwidth=3, highlight_method='line',
-                                highlight_color=[bar_bg, bar_bg]),
-                widget.WindowName(foreground=bar_bg),
-                widget.Systray(),
-                widget.Sep(),
-                widget.Battery(format=' {char}{percent:1.0%} '),
-                widget.Sep(),
-                widget.Clock(format=' %m/%d %I:%M '),
-            ],
-            21,
-            background=bar_bg,
-        ),
-    )
+    top=bar.Bar(
+        [
+            widget.GroupBox(active=bar_fg, inactive=bar_fg, hide_unused=True, this_screen_border=bar_fg,
+                            this_current_screen_border=bar_fg, borderwidth=3, highlight_method='line',
+                            highlight_color=[bar_bg, bar_bg]),
+            widget.WindowName(foreground=bar_bg),
+            widget.Systray(),
+            widget.Sep(),
+            widget.Battery(format=' {char}{percent:1.0%} '),
+            widget.Sep(),
+            widget.Clock(format=' %m/%d %I:%M '),
+        ],
+        21,
+        background=bar_bg,
+    ),
+)
 
 screen2_config = Screen(
-        top=bar.Bar(
-            [
-                widget.GroupBox(active=bar_fg, inactive=bar_fg, hide_unused=True, this_screen_border=bar_fg,
-                                this_current_screen_border=bar_fg, borderwidth=3, highlight_method='line',
-                                highlight_color=[bar_bg, bar_bg]),
-                widget.WindowName(foreground=bar_bg),
-                widget.Systray(),
-                widget.Sep(),
-                widget.Battery(format=' {char}{percent:1.0%} '),
-                widget.Sep(),
-                widget.Clock(format=' %m/%d %I:%M '),
-            ],
-            21,
-            background=bar_bg,
-        ),
-    )
+    top=bar.Bar(
+        [
+            widget.GroupBox(active=bar_fg, inactive=bar_fg, hide_unused=True, this_screen_border=bar_fg,
+                            this_current_screen_border=bar_fg, borderwidth=3, highlight_method='line',
+                            highlight_color=[bar_bg, bar_bg]),
+            widget.WindowName(foreground=bar_bg),
+            widget.Systray(),
+            widget.Sep(),
+            widget.Battery(format=' {char}{percent:1.0%} '),
+            widget.Sep(),
+            widget.Clock(format=' %m/%d %I:%M '),
+        ],
+        21,
+        background=bar_bg,
+    ),
+)
 
 screens = [
-        screen1_config,
-        screen2_config
+    screen1_config,
+    screen2_config
 ]
 
 # Drag floating layouts.

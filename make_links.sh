@@ -5,10 +5,6 @@
 # |_|   \_/ \___\__,_|_|\__,_|\___|_|  \__,_|_| |_|
 #
 # My github: https://github.com/fvcalderan/
-# BSD 3-Clause License
-# Copyright (c) 2020, Felipe V. Calderan
-# All rights reserved.
-# See the full license inside LICENSE.txt file
 
 #!/bin/bash
 
@@ -23,5 +19,7 @@ sudo ln -s -f ~/dotfiles/.config/wallpapers/wallpaper ~/.config/wallpapers/wallp
 sudo ln -s -f ~/dotfiles/.config/vifm/vifmrc ~/.config/vifm/vifmrc
 sudo ln -s -f ~/dotfiles/.config/vifm/colors/Default.vifm ~/.config/vifm/colors/Default.vifm
 sudo ln -s -f ~/dotfiles/.config/vifm/scripts ~/.config/vifm/scripts
+
+sudo cp ~/dotfiles/scripts/scrot_select /bin/scrot_select
 
 
