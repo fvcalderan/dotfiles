@@ -39,7 +39,7 @@ from libqtile import layout, bar, widget
 from typing import List
 
 # Set of colors
-bar_bg = "1C1C1C"
+bar_bg = "1E1F29"
 bar_fg = "FFFFFF"
 
 # Set of variables
