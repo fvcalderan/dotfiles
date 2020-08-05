@@ -22,6 +22,7 @@ alias vim='nvim'
 alias grep='grep --color=auto'
 alias vifm='vifmrun'
 alias cl='clear'
+alias rm='rm -i'
 
 # bash prompt. Default: PS1='[\u@\h \W]\$ '
 PS1="\[\e[1;36m\]\u\[\e[m\]:\[\e[33m\]\W\[\e[m\]\$ "
